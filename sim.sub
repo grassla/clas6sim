@@ -1,0 +1,18 @@
+executable              = 
+initialdir              = <>$(Process)
+
+Requirements = HAS_SINGULARITY == TRUE
++SingularityImage = "/cvmfs/singularity.opensciencegrid.org/huckb/clas6sim:latest"
+
+arguments               = <>.in <>.out
+
+transfer_input_files    = shared/
+transfer_output_files   = YES
+
+log                     = 
+output                  = ####need same name#####
+error                   = 
+
+should_transfer_files   = Yes
+when_to_transfer_output = ON_EXIT
+queue 
